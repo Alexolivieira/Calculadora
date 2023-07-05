@@ -28,12 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            somar = new Button();
+            segundoNumero = new TextBox();
+            primeiroNumero = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            Resultado = new Label();
+            SuspendLayout();
+            // 
+            // somar
+            // 
+            somar.Location = new Point(247, 304);
+            somar.Name = "somar";
+            somar.Size = new Size(112, 34);
+            somar.TabIndex = 0;
+            somar.Text = "somar";
+            somar.UseVisualStyleBackColor = true;
+            // 
+            // segundoNumero
+            // 
+            segundoNumero.Location = new Point(247, 191);
+            segundoNumero.Name = "segundoNumero";
+            segundoNumero.Size = new Size(150, 31);
+            segundoNumero.TabIndex = 1;
+            // 
+            // primeiroNumero
+            // 
+            primeiroNumero.Location = new Point(247, 125);
+            primeiroNumero.Name = "primeiroNumero";
+            primeiroNumero.Size = new Size(150, 31);
+            primeiroNumero.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(93, 125);
+            label1.Name = "label1";
+            label1.Size = new Size(148, 25);
+            label1.TabIndex = 3;
+            label1.Text = "Primeiro Número";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(87, 194);
+            label2.Name = "label2";
+            label2.Size = new Size(154, 25);
+            label2.TabIndex = 4;
+            label2.Text = "Segundo Número";
+            // 
+            // Resultado
+            // 
+            Resultado.AutoSize = true;
+            Resultado.Location = new Point(247, 251);
+            Resultado.Name = "Resultado";
+            Resultado.Size = new Size(22, 25);
+            Resultado.TabIndex = 5;
+            Resultado.Text = "0";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Resultado);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(primeiroNumero);
+            Controls.Add(segundoNumero);
+            Controls.Add(somar);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button somar;
+        private TextBox segundoNumero;
+        private TextBox primeiroNumero;
+        private Label label1;
+        private Label label2;
+        private Label Resultado;
     }
 }
